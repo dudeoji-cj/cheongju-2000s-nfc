@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#cdeaff">
+  <meta name="description" content="CD 키링을 NFC로 태그해 만나는 2000년대 청주 원도심 타임캡슐">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta property="og:title" content="CHEONGJU 2000s">
+  <meta property="og:description" content="청주 원도심으로 시간여행">
+  <title>CHEONGJU 2000s</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="languageButton" class="language-button" type="button" aria-label="Switch to English">ENGLISH</button>
+
+  <main id="homeScreen" class="screen home-screen">
+    <div class="pixel-cloud cloud-one" aria-hidden="true"></div>
+    <div class="pixel-cloud cloud-two" aria-hidden="true"></div>
+    <div class="y2k-sticker sticker-1" aria-hidden="true">★</div>
+    <div class="y2k-sticker sticker-2" aria-hidden="true">♪</div>
+    <div class="y2k-sticker sticker-3" aria-hidden="true">♡</div>
+
+    <section class="home-content" aria-labelledby="homeTitle">
+      <p class="mini-title">NFC TIME CAPSULE</p>
+      <h1 id="homeTitle">CHEONGJU<br><span>2000s</span></h1>
+      <p id="homeSubtitle" class="subtitle">청주 원도심으로<br>시간여행</p>
+
+      <div class="player-window" aria-hidden="true">
+        <div class="window-bar"><span>MY_CD_PLAYER.exe</span><span>− □ ×</span></div>
+        <div class="cd-stage">
+          <div class="cd"><div class="cd-hole"></div></div>
+          <div class="player-info">
+            <p>TRACK 00</p>
+            <strong>CHEONGJU<br>MEMORY</strong>
+            <div class="equalizer"><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
+      </div>
+
+      <button id="startButton" class="main-button" type="button">▶ PLAY 2000s</button>
+      <p id="homeHint" class="hint">CD 안에 저장된 2000년대 청주를 열어보세요.</p>
+    </section>
+  </main>
+
+  <section id="loadingScreen" class="screen loading-screen hidden" aria-live="polite">
+    <div class="loading-box">
+      <div class="mini-disc" aria-hidden="true"></div>
+      <h2 id="loadingTitle">2000년대로 접속 중...</h2>
+      <div class="loading-bar" aria-hidden="true"><span></span></div>
+      <p id="loadingText" class="loading-small">청주 원도심의 기억을 불러오고 있습니다.</p>
+      <p class="loading-code">C:\CHEONGJU\2000s\MEMORY</p>
+    </div>
+  </section>
+
+  <main id="contentScreen" class="screen content-screen hidden">
+    <div class="top-bar">
+      <button id="homeButton" class="text-button" type="button">← 처음으로</button>
+      <span class="top-logo">CHEONGJU 2000s</span>
+    </div>
+
+    <header class="content-header">
+      <p id="capsuleLabel" class="pixel-label">TODAY'S TIME CAPSULE</p>
+      <h2 id="contentTitle">오늘 열어볼<br>2000년대 청주</h2>
+      <p id="capsuleNumber" class="capsule-number">CAPSULE NO. 0000</p>
+    </header>
+
+    <section class="card music-card" aria-labelledby="musicSectionLabel">
+      <div class="card-label"><span class="badge pink">♪</span><span id="musicSectionLabel">그때 그 노래</span></div>
+      <p class="year-tag" id="songYear">2000s</p>
+      <h3 id="songTitle">추천곡</h3>
+      <p id="songArtist" class="sub-info">가수</p>
+      <p id="songCopy" class="body-copy"></p>
+
+      <div id="youtubePlayer" class="youtube-player">
+        <img id="youtubePoster" class="youtube-poster" src="" alt="">
+        <iframe id="youtubeFrame" class="youtube-frame hidden" title="YouTube 15-second preview" src="about:blank" allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="preview-chip"><span id="previewChipText">15 SEC PREVIEW</span></div>
+      </div>
+      <p id="previewStatus" class="preview-status" aria-live="polite">재생 버튼을 누르면 공식 YouTube 영상이 15초간 재생됩니다.</p>
+      <div class="music-actions">
+        <button id="previewButton" class="preview-button" type="button">▶ 15초 미리듣기</button>
+        <a id="youtubeButton" class="youtube-button" href="#" target="_blank" rel="noopener noreferrer">↗ 공식 영상 전체 보기</a>
+      </div>
+    </section>
+
+    <section class="card cheongju-card" aria-labelledby="storySectionLabel">
+      <div class="card-label"><span class="badge blue">CJ</span><span id="storySectionLabel">그때 청주에서는</span></div>
+      <p id="storyYear" class="year-tag"></p>
+      <h3 id="storyTitle"></h3>
+      <p id="storyText" class="body-copy"></p>
+      <a id="storySource" class="source-link" href="#" target="_blank" rel="noopener noreferrer">기록 출처 보기 ↗</a>
+    </section>
+
+    <section class="card trend-card" aria-labelledby="trendSectionLabel">
+      <div class="card-label"><span class="badge yellow">★</span><span id="trendSectionLabel">그때 유행했던 것들</span></div>
+      <div id="trendList" class="trend-list"></div>
+    </section>
+
+    <section class="mission-card" aria-labelledby="missionHeading">
+      <p id="missionLabel" class="mission-label">TODAY'S 2000s COURSE</p>
+      <h3 id="missionHeading">오늘의 2000s 코스</h3>
+      <p id="missionText"></p>
+    </section>
+
+    <div class="bottom-actions">
+      <button id="retryButton" class="main-button" type="button">↻ 다시 시간여행</button>
+      <button id="archiveButton" class="secondary-button" type="button">▦ 전체 기록 보기</button>
+    </div>
+    <p id="copyrightText" class="copyright">기억과 기록을 바탕으로 만든 청주 원도심 타임캡슐입니다.</p>
+  </main>
+
+  <dialog id="archiveDialog" class="archive-dialog">
+    <div class="dialog-window">
+      <div class="window-bar"><span id="archiveTitle">CHEONGJU MEMORY ARCHIVE</span><button id="archiveCloseButton" type="button" aria-label="닫기">×</button></div>
+      <div class="dialog-body">
+        <p id="archiveIntro">2000년대 청주 원도심 기록을 연도별로 살펴보세요.</p>
+        <div id="archiveList" class="archive-list"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
