@@ -34,22 +34,26 @@ const ui = {
 };
 
 const songs = [
+  {year:"1996", title:"캔디 (Candy)", artist:"H.O.T.", videoId:"3NUaXU1d-NY", start:45,
+    copy:{ko:"알록달록한 무대 의상과 쉬운 포인트 안무로 1세대 아이돌 시대를 연 대표곡.",en:"A defining first-generation idol hit remembered for colorful outfits and instantly recognizable choreography."}},
+  {year:"1998", title:"Dreams Come True", artist:"S.E.S.", videoId:"8uiR4SrDGZk", start:52,
+    copy:{ko:"몽환적인 전자음과 세기말 분위기가 어우러진 1998년의 대표적인 걸그룹 곡.",en:"Dreamy electronic sounds and a late-1990s atmosphere shaped this signature girl-group track."}},
+  {year:"1999", title:"영원한 사랑", artist:"Fin.K.L", videoId:"CRR9Wsqf8Ls", start:52,
+    copy:{ko:"친구들과 후렴구를 따라 부르고 손동작까지 맞춰보던 1999년의 밝은 아이돌 팝.",en:"Bright 1999 idol pop whose chorus and hand choreography invited everyone to join in."}},
+  {year:"1999", title:"T.O.P.", artist:"SHINHWA", videoId:"tosQj7d58SU", start:35,
+    copy:{ko:"클래식 선율을 강한 비트와 군무로 재해석하며 신화의 색을 각인시킨 곡.",en:"Shinhwa fused a classical motif with strong beats and synchronized choreography to define their early sound."}},
+  {year:"2000", title:"Friday Night", artist:"g.o.d", videoId:"MBiIeiAJlDQ", start:38,
+    copy:{ko:"주말 밤의 설렘을 친근한 랩과 춤으로 풀어낸 1세대 국민 아이돌의 무대.",en:"Friendly rap, dance and the excitement of a weekend night from one of Korea's best-loved first-generation groups."}},
+  {year:"2001", title:"백전무패", artist:"Click-B", videoId:"G9tjIAas2hs", start:43,
+    copy:{ko:"밴드 사운드와 아이돌 퍼포먼스를 함께 보여준 클릭비의 강렬한 대표곡.",en:"Click-B's forceful signature track combined live-band energy with idol performance."}},
   {year:"2002", title:"No.1", artist:"BoA", videoId:"ceZc-5p3g1w", start:45,
-    copy:{ko:"CD 플레이어와 미니홈피 BGM이 일상이던 시절을 떠올리게 하는 2002년의 대표적인 댄스 팝.",en:"A landmark 2002 dance-pop track that evokes CD players and carefully chosen minihompy background music."}},
-  {year:"2005", title:"Fly", artist:"Epik High", videoId:"AEdzLYKcYZY", start:34,
-    copy:{ko:"MP3 플레이리스트와 노래방을 오가며 힘을 북돋아 주던 2005년의 곡.",en:"A 2005 anthem that moved between MP3 playlists and karaoke rooms, lifting listeners up."}},
+    copy:{ko:"CD 플레이어와 미니홈피 BGM이 일상이던 시절을 떠올리게 하는 2002년의 댄스 팝.",en:"A landmark 2002 dance-pop track that evokes CD players and carefully chosen minihompy background music."}},
+  {year:"2003", title:"아틀란티스 소녀", artist:"BoA", videoId:"skbnuIhVQUA", start:58,
+    copy:{ko:"맑고 신비로운 분위기로 2003년 여름과 그 시절 청춘의 감각을 떠올리게 하는 곡.",en:"Its bright, mysterious mood evokes the summer of 2003 and the youthful optimism of the era."}},
+  {year:"2004", title:"Hug (포옹)", artist:"TVXQ!", videoId:"xQ635vE2RQI", start:45,
+    copy:{ko:"부드러운 화음과 풋풋한 이미지로 2000년대 초반 아이돌 감성을 보여준 데뷔곡.",en:"Soft harmonies and a youthful image captured early-2000s idol sentiment in TVXQ!'s debut."}},
   {year:"2007", title:"Tell Me", artist:"Wonder Girls", videoId:"BlHv3BbBv6A", start:53,
-    copy:{ko:"따라 하기 쉬운 안무가 전국을 휩쓴 2007년의 댄스 열풍. 친구들과 포인트 춤을 맞춰보던 기억.",en:"The 2007 dance craze whose easy-to-follow choreography had friends learning every key move."}},
-  {year:"2007", title:"거짓말 (LIES)", artist:"BIGBANG", videoId:"2Cv3phvP8Ro", start:49,
-    copy:{ko:"거리 매장과 MP3 이어폰에서 끊임없이 흘러나오던 2007년의 감성 힙합 팝.",en:"Emotional hip-hop pop from 2007 that seemed to play everywhere, from street shops to MP3 earbuds."}},
-  {year:"2008", title:"주문 - MIROTIC", artist:"TVXQ!", videoId:"HtJS32n6LNQ", start:52,
-    copy:{ko:"강한 비트와 퍼포먼스로 2008년 음악방송과 팬 문화를 달군 곡.",en:"A performance-driven 2008 hit whose beat and choreography fueled music shows and fan culture."}},
-  {year:"2009", title:"Gee", artist:"Girls' Generation", videoId:"U7mPqycQ0tQ", start:59,
-    copy:{ko:"컬러 스키니진과 반복되는 후렴이 2009년 거리의 색과 리듬을 바꾼 곡.",en:"The 2009 hit whose colorful skinny jeans and repeating hook reshaped the look and rhythm of the street."}},
-  {year:"2009", title:"미스터 (Mister)", artist:"KARA", videoId:"s2EQm6WPMHs", start:43,
-    copy:{ko:"친구들과 포인트 안무를 따라 하게 만들었던 2009년의 밝고 경쾌한 댄스곡.",en:"A bright 2009 dance track that made groups of friends copy its signature choreography."}},
-  {year:"2009", title:"Abracadabra", artist:"Brown Eyed Girls", videoId:"ofwFr8o8p0Y", start:52,
-    copy:{ko:"전자음과 강렬한 퍼포먼스로 2009년 후반의 분위기를 선명하게 남긴 곡.",en:"Electronic production and striking performance captured the mood of late 2009."}}
+    copy:{ko:"따라 하기 쉬운 안무가 전국을 휩쓴 2007년의 댄스 열풍. 친구들과 포인트 춤을 맞춰보던 기억.",en:"The 2007 dance craze whose easy-to-follow choreography had friends learning every key move."}}
 ].map(song => ({...song, youtube:`https://www.youtube.com/watch?v=${song.videoId}`}));
 
 const cheongjuStories = [
