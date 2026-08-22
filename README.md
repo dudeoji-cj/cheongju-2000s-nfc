@@ -6,8 +6,9 @@ NFC를 태그하면 CD 안에 저장된 2000년대 청주 원도심의 음악, �
 주요 기능
 - CHEONGJU 2000s 첫 화면과 Y2K CD 플레이어 디자인
 - PLAY > 로딩 > 랜덤 타임캡슐
-- 1996~2007년 공식 YouTube 영상 10곡 중 1곡 랜덤
-- H.O.T., S.E.S., Fin.K.L, SHINHWA, g.o.d, Click-B, BoA, TVXQ!, Wonder Girls 수록
+- 1996~2007년 공식 YouTube 영상 30곡 중 1곡 랜덤
+- H.O.T., S.E.S., Fin.K.L, SECHSKIES, SHINHWA, g.o.d, Baby V.O.X, Chakra, Click-B, NRG, Jewelry, BoA, TVXQ!, Wonder Girls 수록
+- 30곡 중 29곡을 2005년 이전 노래로 구성
 - 사용자가 누르는 15초 미리듣기와 정지
 - 공식 영상 전체 보기 링크
 - 실제 출처가 연결된 청주 원도심 기록 4개
