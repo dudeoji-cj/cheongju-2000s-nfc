@@ -11,7 +11,7 @@ NFC를 태그하면 CD 안에 저장된 2000년대 청주 원도심의 음악, �
 - 30곡 중 29곡을 2005년 이전 노래로 구성
 - 사용자가 누르는 15초 미리듣기와 정지
 - 공식 영상 전체 보기 링크
-- 실제 출처가 연결된 청주 원도심 기록 4개
+- 실제 출처가 연결된 1997~2008년 청주 지역 기록 16개
 - 성안길 상점가상인회 공식 갤러리의 옛 사진 4장 미니 갤러리
 - 앱 안에서 열리는 제작자 `두더지상회` 소개 페이지
 - Y2K 유행 12개 중 3개 랜덤
@@ -57,8 +57,32 @@ start는 15초 미리듣기를 시작할 초 단위 위치입니다.
 - 성안길 옛 사진: 청주성안길 상점가상인회 공식 갤러리
   https://www.seongangil.co.kr/30/?bmode=view&idx=10257978
   사진 파일을 저장소에 복제하지 않고 원본 사이트의 HTTPS CDN 이미지를 불러오며, 각 썸네일은 공식 갤러리로 연결됩니다.
+- 1997 청주국제공항 개항: 한국공항공사
+  https://www.airport.co.kr/cheongju/cms/frCon/index.do?MENU_ID=330
+- 1997 청주동물원 개장: 대한민국 정책브리핑
+  https://m.korea.kr/news/reporterView.do?newsId=148948788
+- 1999 초롱이네도서관 개관: 문화체육관광부 작은도서관
+  https://www.mcst.go.kr/slibrary/program/bestPractice/265?&libraryName=&currentPage=51
+- 1999 청주시외버스터미널 개장: 연합뉴스
+  https://www.yna.co.kr/view/AKR20160105076000064
+- 1999 제1회 청주국제공예비엔날레: Google Arts & Culture
+  https://artsandculture.google.com/asset/the-rise-of-the-cheongju-craft-biennale/UwFgm8Nn4Y_3_Q?hl=ko
 - 2000 성안길 apM 개점: 충청매일 회고 기사
   https://www.ccdn.co.kr/news/articleView.html?idxno=378129
+- 2000 망선루 중앙공원 이전·복원: 중부매일
+  https://www.jbnews.com/news/articleView.html?idxno=28063
+- 2001 청주시한국공예관 개관: 청주시문화산업진흥재단
+  https://www.cjculture.org/sub.php?code=65&mode=view&no=33
+- 2001 청주백제유물전시관 개관: 청주시
+  https://cjyu.cheongju.go.kr/home/sub.do?menukey=7104&mode=view&sn=662&code1=apply1
+- 2003 청남대 국민 개방: 충청북도 청남대
+  https://www.chungbuk.go.kr/chnam/content.do?key=2004065344327
+- 2003 청주시립도서관 개관: 충청매일
+  https://www.ccdn.co.kr/news/articleView.html?idxno=983871
+- 2004 청주기적의도서관 개관: 중앙일보
+  https://www.joongang.co.kr/article/363644
+- 2004 국립청주박물관 청명관 개관: 한국민족문화대백과사전
+  https://encykorea.aks.ac.kr/Article/E0006255
 - 2005 성안길축제: 충북넷
   https://okcb.net/11544
 - 2007 CGV청주 개장: 충청투데이

@@ -15,11 +15,11 @@ const ui = {
     previewEnded: "15초 미리듣기가 끝났습니다. 다시 들을 수 있어요.",
     previewLocal: "로컬 파일에서는 YouTube 재생이 제한될 수 있습니다. GitHub Pages 주소에서 확인하거나 공식 영상을 열어주세요.",
     youtubeFull: "↗ 공식 영상 전체 보기", source: "기록 출처 보기 ↗", retry: "↻ 다시 시간여행", archive: "▦ 전체 기록 보기",
-    archiveTitle: "CHEONGJU MEMORY ARCHIVE", archiveIntro: "2000년대 청주 원도심 기록을 연도별로 살펴보세요.",
+    archiveTitle: "CHEONGJU MEMORY ARCHIVE", archiveIntro: "1997~2008년 청주의 의미 있는 장소와 원도심 기록을 연도별로 살펴보세요.",
     creatorButton: "☻ 제작자 두더지상회", creatorHome: "제작자 두더지상회", creatorWindowTitle: "CREATOR_DUDEOJI.exe", closeLabel: "닫기",
     creatorEyebrow: "MADE IN CHEONGJU", creatorTitle: "두더지상회", creatorTagline: "청주의 오래된 기억을 오늘의 물건과 디지털 경험으로 연결합니다.",
     creatorProjectText: "CD 키링과 NFC 태그를 통해 성안길의 음악, 기록, 유행을 다시 꺼내 보는 로컬 타임캡슐 프로젝트입니다.", creatorCredit: "기획 · 디자인 · 제작",
-    copyright: "기억과 기록을 바탕으로 만든 청주 원도심 타임캡슐입니다."
+    copyright: "기억과 기록을 바탕으로 만든 청주 타임캡슐입니다."
   },
   en: {
     languageButton: "한국어", languageLabel: "한국어로 전환",
@@ -35,11 +35,11 @@ const ui = {
     previewEnded: "The 15-second preview has ended. You can play it again.",
     previewLocal: "YouTube playback can be restricted from local files. Test on GitHub Pages or open the official video.",
     youtubeFull: "↗ WATCH FULL OFFICIAL VIDEO", source: "View source ↗", retry: "↻ TIME TRAVEL AGAIN", archive: "▦ VIEW ALL RECORDS",
-    archiveTitle: "CHEONGJU MEMORY ARCHIVE", archiveIntro: "Browse downtown Cheongju memories from the 2000s by year.",
+    archiveTitle: "CHEONGJU MEMORY ARCHIVE", archiveIntro: "Browse meaningful Cheongju places and downtown records from 1997 to 2008.",
     creatorButton: "☻ CREATOR: DUDEOJI SHOP", creatorHome: "CREATOR: DUDEOJI SHOP", creatorWindowTitle: "CREATOR_DUDEOJI.exe", closeLabel: "Close",
     creatorEyebrow: "MADE IN CHEONGJU", creatorTitle: "Dudeoji Shop", creatorTagline: "Connecting Cheongju's old memories with objects and digital experiences for today.",
     creatorProjectText: "A local time-capsule project that reopens Seongan-gil's music, records and trends through a CD keyring and NFC tag.", creatorCredit: "PLANNING · DESIGN · PRODUCTION",
-    copyright: "A downtown Cheongju time capsule built from memories and documented records."
+    copyright: "A Cheongju time capsule built from memories and documented records."
   }
 };
 
@@ -107,9 +107,45 @@ const songs = [
 ].map(song => ({...song, youtube:`https://www.youtube.com/watch?v=${song.videoId}`}));
 
 const cheongjuStories = [
+  {year:"1997", title:{ko:"중부권 하늘길, 청주국제공항 개항",en:"Cheongju International Airport opens"},
+    text:{ko:"1997년 4월 청주국제공항이 개항했습니다. 국내선과 국제선을 품은 중부권 거점공항이 생기며 청주의 이동 반경이 하늘길까지 넓어졌습니다.",en:"Cheongju International Airport opened in April 1997, giving the city a central-region air gateway for domestic and international travel."},
+    source:"https://www.airport.co.kr/cheongju/cms/frCon/index.do?MENU_ID=330"},
+  {year:"1997", title:{ko:"가족의 추억이 된 청주동물원",en:"Cheongju Zoo welcomes families"},
+    text:{ko:"1997년 문을 연 청주동물원은 청주시가 운영하는 공영 동물원입니다. 소풍과 가족 나들이의 기억이 쌓이는 대표적인 생태·교육 공간이 됐습니다.",en:"Opened in 1997, the city-run Cheongju Zoo became a familiar place for school trips, family outings and wildlife education."},
+    source:"https://m.korea.kr/news/reporterView.do?newsId=148948788"},
+  {year:"1999", title:{ko:"동네 책방 같은 초롱이네도서관",en:"Chorongi-ne Library opens nearby"},
+    text:{ko:"1999년 1월 초롱이네도서관이 문을 열었습니다. 주민들이 가까운 곳에서 책과 문화 프로그램을 만나는 생활 속 작은도서관으로 자리 잡았습니다.",en:"Chorongi-ne Library opened in January 1999 and grew into a neighborhood reading and cultural space close to everyday life."},
+    source:"https://www.mcst.go.kr/slibrary/program/bestPractice/265?&libraryName=&currentPage=51"},
+  {year:"1999", title:{ko:"가경동에 문을 연 시외버스터미널",en:"The intercity terminal opens in Gagyeong-dong"},
+    text:{ko:"1999년 3월 청주시외버스터미널이 가경동에서 문을 열었습니다. 전국으로 떠나는 버스와 만남·배웅의 풍경이 모이는 새로운 교통 중심지가 됐습니다.",en:"Cheongju Intercity Bus Terminal opened in Gagyeong-dong in March 1999, becoming a new hub for departures, arrivals and connections across Korea."},
+    source:"https://www.yna.co.kr/view/AKR20160105076000064"},
+  {year:"1999", title:{ko:"첫 청주국제공예비엔날레",en:"The first Cheongju Craft Biennale"},
+    text:{ko:"1999년 청주예술의전당에서 ‘조화의 손’을 주제로 제1회 청주국제공예비엔날레가 열렸습니다. 청주가 공예도시로 나아가는 긴 여정의 출발점이었습니다.",en:"The first Cheongju International Craft Biennale opened at the Cheongju Arts Center in 1999 under the theme Hands of Harmony, beginning the city's long craft journey."},
+    source:"https://artsandculture.google.com/asset/the-rise-of-the-cheongju-craft-biennale/UwFgm8Nn4Y_3_Q?hl=ko"},
   {year:"2000", title:{ko:"성안길에 문을 연 apM",en:"apM opens on Seongan-gil"},
     text:{ko:"2000년 6월, 의류점과 게임장·식당 등 약 250개 점포를 갖춘 복합쇼핑몰 apM이 문을 열었습니다. 당시 성안길이 쇼핑과 만남의 중심지였던 풍경을 보여줍니다.",en:"In June 2000, the apM shopping complex opened with roughly 250 fashion shops, an arcade and restaurants, reflecting Seongan-gil's role as a major shopping and meeting place."},
     source:"https://www.ccdn.co.kr/news/articleView.html?idxno=378129"},
+  {year:"2000", title:{ko:"중앙공원으로 돌아온 망선루",en:"Mangseonru returns to Central Park"},
+    text:{ko:"이전·복원된 망선루가 2000년 12월 중앙공원에서 준공됐습니다. 사라질 뻔한 옛 누각이 원도심의 역사 풍경으로 다시 시민 곁에 돌아왔습니다.",en:"The relocated and restored Mangseonru pavilion was completed in Central Park in December 2000, returning a historic landmark to downtown Cheongju."},
+    source:"https://www.jbnews.com/news/articleView.html?idxno=28063"},
+  {year:"2001", title:{ko:"공예를 위한 첫 공립미술관",en:"A public museum devoted to craft"},
+    text:{ko:"2001년 9월 25일 청주시한국공예관이 문을 열었습니다. 전시와 교육, 문화상품을 잇는 공예 전문 공립미술관이 청주 공예문화의 일상적인 거점이 됐습니다.",en:"The Korea Craft Museum in Cheongju opened on September 25, 2001, creating a public home for craft exhibitions, education and cultural products."},
+    source:"https://www.cjculture.org/sub.php?code=65&mode=view&no=33"},
+  {year:"2001", title:{ko:"신봉동 백제 이야기를 만나는 전시관",en:"A home for Cheongju's Baekje story"},
+    text:{ko:"2001년 11월 29일 청주백제유물전시관이 개관했습니다. 신봉동 백제고분군에서 나온 유물을 통해 오래전 청주의 생활과 장례문화를 만나는 공간입니다.",en:"The Cheongju Baekje Heritage Museum opened on November 29, 2001, presenting artifacts from the Shingbong-dong Baekje tombs and the city's ancient past."},
+    source:"https://cjyu.cheongju.go.kr/home/sub.do?menukey=7104&mode=view&sn=662&code1=apply1"},
+  {year:"2003", title:{ko:"비밀의 대통령 별장, 시민에게",en:"Cheongnamdae opens to the public"},
+    text:{ko:"2003년 4월 18일 대통령 전용별장 청남대가 충청북도로 이관되며 국민에게 개방됐습니다. 오랫동안 베일에 싸였던 대청호의 공간이 청주의 대표 관광지가 됐습니다.",en:"On April 18, 2003, the former presidential villa Cheongnamdae was transferred to North Chungcheong Province and opened to the public, becoming a major local destination."},
+    source:"https://www.chungbuk.go.kr/chnam/content.do?key=2004065344327"},
+  {year:"2003", title:{ko:"용암동에 문을 연 청주시립도서관",en:"Cheongju City Library opens"},
+    text:{ko:"2003년 9월 4일 청주시립도서관이 첫 문을 열었습니다. 시민들이 책과 강좌, 문화 프로그램을 함께 누리는 청주의 대표 공공도서관으로 성장했습니다.",en:"Cheongju City Library first opened on September 4, 2003 and grew into a major public space for books, classes and cultural programs."},
+    source:"https://www.ccdn.co.kr/news/articleView.html?idxno=983871"},
+  {year:"2004", title:{ko:"아이들을 위한 기적의도서관",en:"A Miracle Library for children"},
+    text:{ko:"2004년 7월 15일 청주기적의도서관이 문을 열었습니다. 어린이가 책을 읽고 놀고 상상하는 데 중심을 둔 청주의 공공 어린이도서관입니다.",en:"Cheongju Miracle Library opened on July 15, 2004 as a public children's library built around reading, play and imagination."},
+    source:"https://www.joongang.co.kr/article/363644"},
+  {year:"2004", title:{ko:"박물관에 생긴 어린이 문화공간 청명관",en:"Cheongmyeongwan opens for young visitors"},
+    text:{ko:"2004년 10월 8일 국립청주박물관에 청명관이 문을 열었습니다. 어린이박물관과 기획전시실, 영상시설을 갖춰 가족이 함께 문화를 경험하는 공간이 됐습니다.",en:"Cheongmyeongwan opened at the National Museum of Cheongju on October 8, 2004 with a children's museum, special exhibition space and media facilities."},
+    source:"https://encykorea.aks.ac.kr/Article/E0006255"},
   {year:"2005", title:{ko:"거리가 무대가 된 성안길축제",en:"Seongan-gil becomes a festival stage"},
     text:{ko:"2005년 5월 27일부터 29일까지 성안길에서 퍼레이드, 공연, 거리미술, 청소년 프로그램이 펼쳐졌습니다. 쇼핑 거리 전체가 시민과 예술가의 무대로 변했습니다.",en:"From May 27 to 29, 2005, Seongan-gil hosted a parade, performances, street art and youth programs, turning the shopping district into a stage for citizens and artists."},
     source:"https://okcb.net/11544"},
