@@ -9,7 +9,7 @@
   <meta property="og:title" content="CHEONGJU 2000s">
   <meta property="og:description" content="청주 원도심으로 시간여행">
   <title>CHEONGJU 2000s</title>
-  <link rel="stylesheet" href="style.css?v=35">
+  <link rel="stylesheet" href="style.css?v=36">
 </head>
 <body>
   <button id="languageButton" class="language-button" type="button" aria-label="Switch to English">ENGLISH</button>
@@ -69,19 +69,16 @@
     <section class="card music-card" aria-labelledby="musicSectionLabel">
       <div class="card-label"><span class="badge pink">♪</span><span id="musicSectionLabel">그때 그 노래</span></div>
       <p class="year-tag" id="songYear">2000s</p>
-      <h3 id="songTitle">추천곡</h3>
-      <p id="songArtist" class="sub-info">가수</p>
-      <p id="songCopy" class="body-copy"></p>
 
-      <div id="audioPlayer" class="audio-player" aria-hidden="true">
+      <div id="audioPlayer" class="audio-player">
         <div class="audio-artwork">
           <img id="albumCover" class="album-cover hidden" src="" alt="">
           <div id="albumFallback" class="audio-disc"><span>♪</span></div>
         </div>
         <div class="audio-display">
-          <strong>AUDIO ONLY</strong>
-          <div class="audio-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <small>15 SEC OFFICIAL PREVIEW</small>
+          <h3 id="songTitle" class="audio-song-title">추천곡</h3>
+          <p id="songArtist" class="audio-song-artist">가수</p>
+          <p id="songCopy" class="audio-song-copy"></p>
         </div>
         <audio id="audioPreview" preload="none"></audio>
         <div class="preview-chip"><span id="previewChipText">15 SEC PREVIEW</span></div>
