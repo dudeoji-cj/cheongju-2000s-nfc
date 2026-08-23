@@ -81,10 +81,10 @@ button:focus-visible,a:focus-visible{outline:4px solid #fff;outline-offset:3px;b
 
 
 /* Song details live inside the audio-only panel. */
-.audio-player{align-items:start;min-height:178px;margin-top:10px}
+.audio-player{align-items:start;min-height:150px;margin-top:10px}
 .audio-artwork{margin-top:3px}
 .audio-display{padding-top:1px}
 .audio-song-title{margin:0;color:#fff;font-size:20px;line-height:1.18;letter-spacing:-.02em;word-break:keep-all}
 .audio-song-artist{margin:6px 0 0;color:var(--mint);font:900 12px ui-monospace,"SFMono-Regular",monospace;letter-spacing:.05em;word-break:keep-all}
-.audio-song-copy{margin:10px 0 20px;color:#fff;font-size:11.5px;font-weight:700;line-height:1.55;opacity:.82;word-break:keep-all}
+.audio-song-copy{margin:10px 0 0;color:#fff;font-size:11.5px;font-weight:700;line-height:1.55;opacity:.82;word-break:keep-all}
 .audio-player.is-playing .audio-song-title{color:var(--yellow)}
