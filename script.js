@@ -7,14 +7,15 @@ const ui = {
     start: "▶ PLAY 2000s", loadingTitle: "2000년대로 접속 중...", loadingText: "청주 원도심의 기억을 불러오고 있습니다.",
     home: "← 처음으로", capsuleLabel: "TODAY'S TIME CAPSULE", contentTitle: "오늘 열어볼<br>2000년대 청주",
     musicLabel: "그때 그 노래", storyLabel: "그때 청주에서는", trendLabel: "그때 유행했던 것들",
-    photoLabel: "성안길 옛 사진", photoIntro: "작은 사진을 누르면 공식 성안길 갤러리의 원본 기록으로 이동합니다.",
-    photoSource: "사진 출처: 청주성안길 상점가상인회 공식 갤러리 ↗", photoAlt: "성안길 옛 거리 사진",
+    photoLabel: "성안길 옛 사진", photoIntro: "1999년과 2000년대 초 성안길 기록입니다. 사진을 누르면 공식 사진DB 원본으로 이동합니다.",
+    photoSource: "충청북도 사진DB: 1999 성안길 축제 ↗", photoSourceCity: "청주시 사진DB: 2001·2004 성안길 ↗", photoLicense: "사용 조건: 공공누리 제2유형, 출처표시·비상업적 이용", photoAlt: "성안길 옛 거리 사진",
     missionLabel: "TODAY'S 2000s COURSE", missionTitle: "오늘의 2000s 코스",
-    previewReady: "재생 버튼을 누르면 공식 YouTube 영상이 15초간 재생됩니다.",
-    previewPlay: "▶ 15초 미리듣기", previewStop: "■ 미리듣기 정지", previewPlaying: "공식 YouTube 영상 미리듣기 재생 중...",
-    previewEnded: "15초 미리듣기가 끝났습니다. 다시 들을 수 있어요.",
-    previewLocal: "로컬 파일에서는 YouTube 재생이 제한될 수 있습니다. GitHub Pages 주소에서 확인하거나 공식 영상을 열어주세요.",
-    youtubeFull: "↗ 공식 영상 전체 보기", source: "기록 출처 보기 ↗", retry: "↻ 다시 시간여행", archive: "▦ 전체 기록 보기",
+    previewPreparing: "Apple Music의 공식 오디오 미리듣기를 준비하고 있습니다...",
+    previewReady: "재생 버튼을 누르면 영상 없이 음악만 15초간 재생됩니다.",
+    previewPlay: "▶ 15초 음악 미리듣기", previewStop: "■ 미리듣기 정지", previewPlaying: "공식 오디오 미리듣기 재생 중...",
+    previewEnded: "15초 음악 미리듣기가 끝났습니다. 다시 들을 수 있어요.",
+    previewError: "이 곡의 공식 오디오 미리듣기를 불러오지 못했습니다. Apple Music 또는 공식 영상을 이용해주세요.",
+    appleFull: "↗ Apple Music 전체 듣기", youtubeFull: "↗ 공식 영상 전체 보기", source: "기록 출처 보기 ↗", retry: "↻ 다시 시간여행", archive: "▦ 전체 기록 보기",
     archiveTitle: "CHEONGJU MEMORY ARCHIVE", archiveIntro: "1997~2008년 청주의 의미 있는 장소와 원도심 기록을 연도별로 살펴보세요.",
     creatorButton: "☻ 제작자 두더지상회", creatorHome: "제작자 두더지상회", creatorWindowTitle: "CREATOR_DUDEOJI.exe", closeLabel: "닫기",
     creatorEyebrow: "MADE IN CHEONGJU", creatorTitle: "두더지상회", creatorTagline: "청주의 오래된 기억을 오늘의 물건과 디지털 경험으로 연결합니다.",
@@ -27,14 +28,15 @@ const ui = {
     start: "▶ PLAY 2000s", loadingTitle: "Connecting to the 2000s...", loadingText: "Loading memories from downtown Cheongju.",
     home: "← HOME", capsuleLabel: "TODAY'S TIME CAPSULE", contentTitle: "Today's glimpse of<br>Cheongju in the 2000s",
     musicLabel: "THE SONG BACK THEN", storyLabel: "CHEONGJU BACK THEN", trendLabel: "Y2K THINGS WE LOVED",
-    photoLabel: "OLD SEONGAN-GIL PHOTOS", photoIntro: "Tap a small photo to open the original record in the official Seongan-gil gallery.",
-    photoSource: "Photo source: Cheongju Seongan-gil Merchants Association ↗", photoAlt: "Historic Seongan-gil street photo",
+    photoLabel: "OLD SEONGAN-GIL PHOTOS", photoIntro: "These records show Seongan-gil in 1999 and the early 2000s. Tap a photo to open its official archive record.",
+    photoSource: "Chungcheongbuk-do Photo DB: 1999 festival ↗", photoSourceCity: "Cheongju Photo DB: 2001 and 2004 ↗", photoLicense: "License: Korea Open Government License Type 2, attribution and non-commercial use", photoAlt: "Historic Seongan-gil street photo",
     missionLabel: "TODAY'S 2000s COURSE", missionTitle: "Your 2000s course",
-    previewReady: "Press play for a 15-second preview from the official YouTube video.",
-    previewPlay: "▶ PLAY 15 SEC", previewStop: "■ STOP PREVIEW", previewPlaying: "Playing the official YouTube preview...",
-    previewEnded: "The 15-second preview has ended. You can play it again.",
-    previewLocal: "YouTube playback can be restricted from local files. Test on GitHub Pages or open the official video.",
-    youtubeFull: "↗ WATCH FULL OFFICIAL VIDEO", source: "View source ↗", retry: "↻ TIME TRAVEL AGAIN", archive: "▦ VIEW ALL RECORDS",
+    previewPreparing: "Preparing the official Apple Music audio preview...",
+    previewReady: "Press play to hear 15 seconds of music with no video.",
+    previewPlay: "▶ PLAY 15 SEC AUDIO", previewStop: "■ STOP PREVIEW", previewPlaying: "Playing the official audio preview...",
+    previewEnded: "The 15-second audio preview has ended. You can play it again.",
+    previewError: "The official audio preview could not be loaded. Please use Apple Music or the official video link.",
+    appleFull: "↗ LISTEN ON APPLE MUSIC", youtubeFull: "↗ WATCH FULL OFFICIAL VIDEO", source: "View source ↗", retry: "↻ TIME TRAVEL AGAIN", archive: "▦ VIEW ALL RECORDS",
     archiveTitle: "CHEONGJU MEMORY ARCHIVE", archiveIntro: "Browse meaningful Cheongju places and downtown records from 1997 to 2008.",
     creatorButton: "☻ CREATOR: DUDEOJI SHOP", creatorHome: "CREATOR: DUDEOJI SHOP", creatorWindowTitle: "CREATOR_DUDEOJI.exe", closeLabel: "Close",
     creatorEyebrow: "MADE IN CHEONGJU", creatorTitle: "Dudeoji Shop", creatorTagline: "Connecting Cheongju's old memories with objects and digital experiences for today.",
@@ -105,6 +107,23 @@ const songs = [
   {year:"2007", title:"Tell Me", artist:"Wonder Girls", videoId:"BlHv3BbBv6A", start:53,
     copy:{ko:"따라 하기 쉬운 안무가 전국을 휩쓴 2007년의 댄스 열풍. 친구들과 포인트 춤을 맞춰보던 기억.",en:"The 2007 dance craze whose easy-to-follow choreography had friends learning every key move."}}
 ].map(song => ({...song, youtube:`https://www.youtube.com/watch?v=${song.videoId}`}));
+
+const appleArtistAliases = {
+  "Fin.K.L":"핑클", "SECHSKIES":"젝스키스", "SHINHWA":"신화", "g.o.d":"지오디",
+  "Baby V.O.X":"베이비복스", "Chakra":"샤크라", "Click-B":"클릭비", "BoA":"보아",
+  "TVXQ!":"동방신기", "Jewelry":"쥬얼리", "NRG":"엔알지"
+};
+function appleSearchTerm(song){ return `${appleArtistAliases[song.artist] || song.artist} ${song.title}`; }
+function normalizedTrackName(value){
+  return value.toLowerCase().replace(/\([^)]*\)/g, " ").replace(/[^0-9a-z가-힣]+/g, " ").trim();
+}
+function selectApplePreview(song, results){
+  const desired = song.title === "Rising Sun (순수)" ? "순수" : normalizedTrackName(song.title);
+  const candidates = results.filter(item => item.kind === "song" && item.previewUrl);
+  return candidates.find(item => normalizedTrackName(item.trackName) === desired)
+    || candidates.find(item => normalizedTrackName(item.trackName).includes(desired))
+    || candidates[0];
+}
 
 const cheongjuStories = [
   {year:"1997", title:{ko:"중부권 하늘길, 청주국제공항 개항",en:"Cheongju International Airport opens"},
@@ -184,6 +203,10 @@ let language = localStorage.getItem("cheongju2000s-language") || "ko";
 let currentCapsule = null;
 let previewTimer = null;
 let previewActive = false;
+let previewPreparing = false;
+let preparedSongKey = "";
+let preparedPreview = null;
+let previewRequest = 0;
 
 function pick(array){ return array[Math.floor(Math.random() * array.length)]; }
 function sample(array, count){
@@ -213,11 +236,14 @@ function applyLanguage(){
   $("photoSectionLabel").textContent = t.photoLabel;
   $("photoIntro").textContent = t.photoIntro;
   $("photoSource").textContent = t.photoSource;
+  $("photoSourceCity").textContent = t.photoSourceCity;
+  $("photoLicense").textContent = t.photoLicense;
   document.querySelectorAll(".old-photo").forEach((image, index) => { image.alt = `${t.photoAlt} ${index + 1}`; });
   $("missionLabel").textContent = t.missionLabel;
   $("missionHeading").textContent = t.missionTitle;
   $("previewButton").textContent = previewActive ? t.previewStop : t.previewPlay;
-  if(!previewActive) $("previewStatus").textContent = t.previewReady;
+  $("previewStatus").textContent = previewActive ? t.previewPlaying : (previewPreparing ? t.previewPreparing : (preparedPreview ? t.previewReady : t.previewError));
+  $("appleButton").textContent = t.appleFull;
   $("youtubeButton").textContent = t.youtubeFull;
   $("storySource").textContent = t.source;
   $("retryButton").textContent = t.retry;
@@ -242,33 +268,69 @@ function stopPreview(messageKey = null){
   clearTimeout(previewTimer);
   previewTimer = null;
   previewActive = false;
-  $("youtubeFrame").src = "about:blank";
-  $("youtubeFrame").classList.add("hidden");
-  $("youtubePoster").classList.remove("hidden");
+  const audio = $("audioPreview");
+  audio.pause();
+  try { audio.currentTime = 0; } catch(error) {}
+  $("audioPlayer").classList.remove("is-playing");
   $("previewButton").textContent = ui[language].previewPlay;
   $("previewButton").setAttribute("aria-pressed", "false");
   if(messageKey) $("previewStatus").textContent = ui[language][messageKey];
 }
 
+async function prepareAudioPreview(song){
+  const key = `${song.artist}|${song.title}`;
+  const request = ++previewRequest;
+  previewPreparing = true;
+  preparedSongKey = key;
+  preparedPreview = null;
+  $("previewButton").disabled = true;
+  $("previewStatus").textContent = ui[language].previewPreparing;
+  $("audioPreview").removeAttribute("src");
+  $("audioPreview").load();
+  const searchTerm = appleSearchTerm(song);
+  $("appleButton").href = `https://music.apple.com/kr/search?term=${encodeURIComponent(searchTerm)}`;
+  try {
+    const response = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(searchTerm)}&entity=song&limit=30&country=KR`);
+    if(!response.ok) throw new Error(`Apple Search ${response.status}`);
+    const data = await response.json();
+    const preview = selectApplePreview(song, data.results || []);
+    if(!preview) throw new Error("No official preview");
+    if(request !== previewRequest || preparedSongKey !== key) return;
+    preparedPreview = preview;
+    previewPreparing = false;
+    $("audioPreview").src = preview.previewUrl;
+    $("appleButton").href = preview.trackViewUrl || $("appleButton").href;
+    $("previewButton").disabled = false;
+    $("previewStatus").textContent = ui[language].previewReady;
+  } catch(error) {
+    if(request !== previewRequest || preparedSongKey !== key) return;
+    previewPreparing = false;
+    preparedPreview = null;
+    $("previewButton").disabled = true;
+    $("previewStatus").textContent = ui[language].previewError;
+  }
+}
+
 function startPreview(){
   if(!currentCapsule) return;
   if(previewActive){ stopPreview("previewReady"); return; }
-  const song = currentCapsule.song;
-  if(!["http:", "https:"].includes(location.protocol)){
-    $("previewStatus").textContent = ui[language].previewLocal;
+  if(!preparedPreview){
+    $("previewStatus").textContent = ui[language][previewPreparing ? "previewPreparing" : "previewError"];
     return;
   }
-  const start = song.start || 0;
-  const end = start + 15;
-  const params = new URLSearchParams({autoplay:"1", start:String(start), end:String(end), playsinline:"1", rel:"0", modestbranding:"1", iv_load_policy:"3"});
-  $("youtubeFrame").src = `https://www.youtube-nocookie.com/embed/${song.videoId}?${params}`;
-  $("youtubePoster").classList.add("hidden");
-  $("youtubeFrame").classList.remove("hidden");
+  const audio = $("audioPreview");
+  try { audio.currentTime = 0; } catch(error) {}
+  const playResult = audio.play();
   previewActive = true;
+  $("audioPlayer").classList.add("is-playing");
   $("previewButton").textContent = ui[language].previewStop;
   $("previewButton").setAttribute("aria-pressed", "true");
   $("previewStatus").textContent = ui[language].previewPlaying;
-  previewTimer = setTimeout(() => stopPreview("previewEnded"), 16000);
+  previewTimer = setTimeout(() => stopPreview("previewEnded"), 15000);
+  if(playResult?.catch) playResult.catch(() => {
+    stopPreview();
+    $("previewStatus").textContent = ui[language].previewError;
+  });
 }
 
 function renderCapsule(capsule, resetPreview = true){
@@ -281,8 +343,8 @@ function renderCapsule(capsule, resetPreview = true){
   $("songArtist").textContent = song.artist;
   $("songCopy").textContent = localized(song.copy);
   $("youtubeButton").href = song.youtube;
-  $("youtubePoster").src = `https://i.ytimg.com/vi/${song.videoId}/hqdefault.jpg`;
-  $("youtubePoster").alt = `${song.artist} ${song.title} YouTube thumbnail`;
+  const songKey = `${song.artist}|${song.title}`;
+  if(preparedSongKey !== songKey) prepareAudioPreview(song);
   $("storyYear").textContent = story.year;
   $("storyTitle").textContent = localized(story.title);
   $("storyText").textContent = localized(story.text);
@@ -357,6 +419,7 @@ $("languageButton").addEventListener("click", () => {
 $("startButton").addEventListener("click", () => startTimeTravel());
 $("retryButton").addEventListener("click", () => startTimeTravel(650));
 $("previewButton").addEventListener("click", startPreview);
+$("audioPreview").addEventListener("ended", () => { if(previewActive) stopPreview("previewEnded"); });
 $("homeButton").addEventListener("click", () => {
   stopPreview();
   $("contentScreen").classList.add("hidden");

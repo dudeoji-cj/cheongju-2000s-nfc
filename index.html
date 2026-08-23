@@ -73,14 +73,20 @@
       <p id="songArtist" class="sub-info">가수</p>
       <p id="songCopy" class="body-copy"></p>
 
-      <div id="youtubePlayer" class="youtube-player">
-        <img id="youtubePoster" class="youtube-poster" src="" alt="">
-        <iframe id="youtubeFrame" class="youtube-frame hidden" title="YouTube 15-second preview" src="about:blank" allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div id="audioPlayer" class="audio-player" aria-hidden="true">
+        <div class="audio-disc"><span>♪</span></div>
+        <div class="audio-display">
+          <strong>AUDIO ONLY</strong>
+          <div class="audio-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <small>15 SEC OFFICIAL PREVIEW</small>
+        </div>
+        <audio id="audioPreview" preload="none"></audio>
         <div class="preview-chip"><span id="previewChipText">15 SEC PREVIEW</span></div>
       </div>
-      <p id="previewStatus" class="preview-status" aria-live="polite">재생 버튼을 누르면 공식 YouTube 영상이 15초간 재생됩니다.</p>
+      <p id="previewStatus" class="preview-status" aria-live="polite">공식 오디오 미리듣기를 준비하고 있습니다.</p>
       <div class="music-actions">
-        <button id="previewButton" class="preview-button" type="button">▶ 15초 미리듣기</button>
+        <button id="previewButton" class="preview-button" type="button" disabled>▶ 15초 음악 미리듣기</button>
+        <a id="appleButton" class="apple-button" href="https://music.apple.com/kr" target="_blank" rel="noopener noreferrer">↗ Apple Music 전체 듣기</a>
         <a id="youtubeButton" class="youtube-button" href="#" target="_blank" rel="noopener noreferrer">↗ 공식 영상 전체 보기</a>
       </div>
     </section>
@@ -95,26 +101,30 @@
 
     <section class="card photo-card" aria-labelledby="photoSectionLabel">
       <div class="card-label"><span class="badge mint">PIC</span><span id="photoSectionLabel">성안길 옛 사진</span></div>
-      <p id="photoIntro" class="photo-intro">작은 사진을 누르면 공식 성안길 갤러리의 원본 기록으로 이동합니다.</p>
+      <p id="photoIntro" class="photo-intro">1999년과 2000년대 초 성안길 기록입니다. 사진을 누르면 공식 사진DB 원본으로 이동합니다.</p>
       <div class="old-photo-strip">
-        <a class="old-photo-link" href="https://www.seongangil.co.kr/30/?bmode=view&idx=10257978" target="_blank" rel="noopener noreferrer">
-          <img class="old-photo" src="https://cdn.imweb.me/upload/S201805215b0247cb93a08/1da5d6ffe7de4.png" alt="성안길 옛 거리 사진 1" loading="lazy" referrerpolicy="no-referrer">
-          <span>01</span>
+        <a class="old-photo-link" href="https://photo.chungbuk.go.kr/photo/selectPhotoInfoWebView.do?key=302&amp;ctgryNo=245&amp;photoInfoNo=7373&amp;pageUnit=12&amp;photoNo=7373&amp;pageIndex=3" target="_blank" rel="noopener noreferrer">
+          <img class="old-photo" src="https://photo.chungbuk.go.kr/photoImageView/preview/7373.do" alt="1999년 성안길 축제 사진 1" loading="lazy" referrerpolicy="no-referrer">
+          <span>1999</span>
         </a>
-        <a class="old-photo-link" href="https://www.seongangil.co.kr/30/?bmode=view&idx=10257978" target="_blank" rel="noopener noreferrer">
-          <img class="old-photo" src="https://cdn.imweb.me/upload/S201805215b0247cb93a08/24ad032f420ad.png" alt="성안길 옛 거리 사진 2" loading="lazy" referrerpolicy="no-referrer">
-          <span>02</span>
+        <a class="old-photo-link" href="https://photo.chungbuk.go.kr/photo/selectPhotoInfoWebView.do?key=302&amp;ctgryNo=245&amp;photoInfoNo=7373&amp;pageUnit=12&amp;photoNo=73920&amp;pageIndex=3" target="_blank" rel="noopener noreferrer">
+          <img class="old-photo" src="https://photo.chungbuk.go.kr/photoImageView/preview/73920.do" alt="1999년 성안길 축제 사진 2" loading="lazy" referrerpolicy="no-referrer">
+          <span>1999</span>
         </a>
-        <a class="old-photo-link" href="https://www.seongangil.co.kr/30/?bmode=view&idx=10257978" target="_blank" rel="noopener noreferrer">
-          <img class="old-photo" src="https://cdn.imweb.me/upload/S201805215b0247cb93a08/4b416c1ce938c.png" alt="성안길 옛 거리 사진 3" loading="lazy" referrerpolicy="no-referrer">
-          <span>03</span>
+        <a class="old-photo-link" href="https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=299&amp;ctgryNo=244&amp;photoInfoNo=57713&amp;pageIndex=1&amp;pageUnit=12&amp;dt=card" target="_blank" rel="noopener noreferrer">
+          <img class="old-photo" src="https://photo.cheongju.go.kr/photoImageView/preview/114674.do" alt="2001년 성안길 축제 사진" loading="lazy" referrerpolicy="no-referrer">
+          <span>2001</span>
         </a>
-        <a class="old-photo-link" href="https://www.seongangil.co.kr/30/?bmode=view&idx=10257978" target="_blank" rel="noopener noreferrer">
-          <img class="old-photo" src="https://cdn.imweb.me/upload/S201805215b0247cb93a08/5949fba8de2d2.png" alt="성안길 옛 거리 사진 4" loading="lazy" referrerpolicy="no-referrer">
-          <span>04</span>
+        <a class="old-photo-link" href="https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=187&amp;ctgryNo=31&amp;photoInfoNo=47197" target="_blank" rel="noopener noreferrer">
+          <img class="old-photo" src="https://photo.cheongju.go.kr/photoImageView/preview/105618.do" alt="2004년 성안길 풍경 사진" loading="lazy" referrerpolicy="no-referrer">
+          <span>2004</span>
         </a>
       </div>
-      <a id="photoSource" class="photo-source" href="https://www.seongangil.co.kr/30/?bmode=view&idx=10257978" target="_blank" rel="noopener noreferrer">사진 출처: 청주성안길 상점가상인회 공식 갤러리 ↗</a>
+      <div class="photo-sources">
+        <a id="photoSource" class="photo-source" href="https://photo.chungbuk.go.kr/photo/selectPhotoInfoWebView.do?key=302&amp;ctgryNo=245&amp;photoInfoNo=7373&amp;pageUnit=12&amp;pageIndex=3" target="_blank" rel="noopener noreferrer">충청북도 사진DB: 1999 성안길 축제 ↗</a>
+        <a id="photoSourceCity" class="photo-source" href="https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=299&amp;ctgryNo=244&amp;photoInfoNo=57713&amp;pageIndex=1&amp;pageUnit=12&amp;dt=card" target="_blank" rel="noopener noreferrer">청주시 사진DB: 2001·2004 성안길 ↗</a>
+        <p id="photoLicense" class="photo-license">사용 조건: 공공누리 제2유형, 출처표시·비상업적 이용</p>
+      </div>
     </section>
 
     <section class="card trend-card" aria-labelledby="trendSectionLabel">
@@ -164,6 +174,6 @@
     </div>
   </dialog>
 
-  <script src="script.js?v=32"></script>
+  <script src="script.js?v=33"></script>
 </body>
 </html>

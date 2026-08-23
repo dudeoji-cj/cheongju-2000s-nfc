@@ -6,13 +6,13 @@ NFC를 태그하면 CD 안에 저장된 2000년대 청주 원도심의 음악, �
 주요 기능
 - CHEONGJU 2000s 첫 화면과 Y2K CD 플레이어 디자인
 - PLAY > 로딩 > 랜덤 타임캡슐
-- 1996~2007년 공식 YouTube 영상 30곡 중 1곡 랜덤
+- 1996~2007년 아이돌 30곡 중 1곡 랜덤
 - H.O.T., S.E.S., Fin.K.L, SECHSKIES, SHINHWA, g.o.d, Baby V.O.X, Chakra, Click-B, NRG, Jewelry, BoA, TVXQ!, Wonder Girls 수록
 - 30곡 중 29곡을 2005년 이전 노래로 구성
-- 사용자가 누르는 15초 미리듣기와 정지
-- 공식 영상 전체 보기 링크
+- Apple Music 공식 오디오를 이용한 영상 없는 15초 음악 미리듣기와 정지
+- Apple Music 전체 듣기와 공식 YouTube 영상 전체 보기 링크
 - 실제 출처가 연결된 1997~2008년 청주 지역 기록 16개
-- 성안길 상점가상인회 공식 갤러리의 옛 사진 4장 미니 갤러리
+- 충청북도·청주시 사진DB의 1999·2001·2004년 성안길 사진 4장 미니 갤러리
 - 앱 안에서 열리는 제작자 `두더지상회` 소개 페이지
 - Y2K 유행 12개 중 3개 랜덤
 - 오늘의 2000s 코스 랜덤 추천
@@ -20,12 +20,13 @@ NFC를 태그하면 CD 안에 저장된 2000년대 청주 원도심의 음악, �
 - 전체 기록 보기
 - 한국어/영어 전환
 
-YouTube 재생 방식
-1. 자동재생은 모바일 브라우저에서 자주 차단되므로 사용자가 '15초 미리듣기' 버튼을 직접 누르는 방식입니다.
-2. 버튼을 누른 뒤 youtube-nocookie.com의 공식 임베드가 열리고 15초 뒤 자동으로 멈춥니다.
-3. 영상 소유자가 임베드를 제한하거나 네트워크에서 YouTube가 차단되면 '공식 영상 전체 보기' 링크를 사용합니다.
-4. file:// 주소로 index.html을 직접 열면 YouTube가 Error 153 등으로 재생을 막을 수 있습니다. GitHub Pages나 로컬 HTTP 서버에서 테스트하세요.
-5. GitHub Pages 배포 뒤 iPhone Safari와 Android Chrome에서 각각 테스트하세요.
+오디오 미리듣기 방식
+1. 영상 없이 음악만 들을 수 있도록 iTunes Search API에서 Apple Music의 공식 미리듣기 주소를 불러옵니다.
+2. 곡 카드가 열리면 공식 미리듣기를 준비하고, 사용자가 '15초 음악 미리듣기' 버튼을 직접 누를 때만 재생합니다.
+3. 재생은 15초 뒤 자동으로 멈추며 같은 버튼으로 중간에 정지할 수 있습니다.
+4. 전체 음원은 Apple Music 링크, 전체 영상은 공식 YouTube 링크를 사용합니다.
+5. 미리듣기 제공 여부는 국가·유통사 정책에 따라 바뀔 수 있으므로 공개 사이트에서 정기적으로 확인하세요.
+6. GitHub Pages 배포 뒤 iPhone Safari와 Android Chrome에서 각각 테스트하세요.
 
 간단한 로컬 테스트
 - VS Code Live Server를 사용하거나 정적 HTTP 서버로 이 폴더를 여세요.
@@ -54,9 +55,13 @@ start는 15초 미리듣기를 시작할 초 단위 위치입니다.
 공식 아티스트·기획사·방송사 채널의 영상 사용을 권장합니다.
 
 청주 기록 출처
-- 성안길 옛 사진: 청주성안길 상점가상인회 공식 갤러리
-  https://www.seongangil.co.kr/30/?bmode=view&idx=10257978
-  사진 파일을 저장소에 복제하지 않고 원본 사이트의 HTTPS CDN 이미지를 불러오며, 각 썸네일은 공식 갤러리로 연결됩니다.
+- 1999년 10월 15일 청주 성안길 축제: 충청북도 사진DB
+  https://photo.chungbuk.go.kr/photo/selectPhotoInfoWebView.do?key=302&ctgryNo=245&photoInfoNo=7373&pageUnit=12&pageIndex=3
+- 2001년 성안길축제: 청주시 사진DB
+  https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=299&ctgryNo=244&photoInfoNo=57713&pageIndex=1&pageUnit=12&dt=card
+- 2004년 4월 13일 성안길 풍경: 청주시 사진DB
+  https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=187&ctgryNo=31&photoInfoNo=47197
+  사진 파일을 저장소에 복제하지 않고 공식 사진DB의 미리보기 이미지를 불러옵니다. 사진DB 표기 조건은 공공누리 제2유형(출처표시·비상업적 이용)이며, 초상권에 주의해야 합니다.
 - 1997 청주국제공항 개항: 한국공항공사
   https://www.airport.co.kr/cheongju/cms/frCon/index.do?MENU_ID=330
 - 1997 청주동물원 개장: 대한민국 정책브리핑
@@ -103,6 +108,7 @@ GitHub Pages
 5. 최종 주소가 확정되기 전에는 NFC 태그를 읽기 전용으로 잠그지 마세요.
 
 저작권 주의
-- 페이지 안에 음원 파일을 복제하거나 배포하지 않고 YouTube 공식 영상 임베드와 링크만 사용합니다.
-- 서비스 공개 전 영상 임베드 가능 여부와 콘텐츠 사용 조건을 다시 확인하세요.
+- 페이지 안에 음원 파일을 복제하거나 배포하지 않고 Apple Music 공식 미리듣기 스트림과 스토어 링크를 사용합니다.
+- YouTube는 영상 전체 보기 링크로만 제공하며, 영상을 숨기고 소리만 재생하는 방식은 사용하지 않습니다.
+- Apple Music 미리듣기 및 사진DB 자료의 사용 조건을 서비스 공개 전에 다시 확인하세요.
 - 기사 문장은 짧게 재서술했고 원문 출처 링크를 함께 제공합니다. 기사 사진을 직접 넣으려면 별도 사용 조건을 확인하세요.
