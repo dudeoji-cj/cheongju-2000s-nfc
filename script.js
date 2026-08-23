@@ -7,8 +7,8 @@ const ui = {
     start: "▶ PLAY 2000s", loadingTitle: "2000년대로 접속 중...", loadingText: "청주 원도심의 기억을 불러오고 있습니다.",
     home: "← 처음으로", capsuleLabel: "TODAY'S TIME CAPSULE", contentTitle: "오늘 열어볼<br>2000년대 청주",
     musicLabel: "그때 그 노래", storyLabel: "그때 청주에서는", trendLabel: "그때 유행했던 것들",
-    photoLabel: "성안길 옛 사진", photoIntro: "1999년과 2000년대 초 성안길 기록입니다. 사진을 누르면 공식 사진DB 원본으로 이동합니다.",
-    photoSource: "충청북도 사진DB: 1999 성안길 축제 ↗", photoSourceCity: "청주시 사진DB: 2001·2004 성안길 ↗", photoLicense: "사용 조건: 공공누리 제2유형, 출처표시·비상업적 이용", photoAlt: "성안길 옛 거리 사진",
+    photoLabel: "성안길 옛 사진", photoIntro: "2001년 3월 22일 성안길 대청소 기록 16장입니다. 사진을 누르면 청주시 사진DB 원본으로 이동합니다.",
+    photoSource: "청주시 사진DB: 2001 성안길 대청소 16장 ↗", photoLicense: "사용 조건: 공공누리 제2유형, 출처표시·비상업적 이용", photoAlt: "2001년 성안길 대청소 사진",
     missionLabel: "TODAY'S 2000s COURSE", missionTitle: "오늘의 2000s 코스",
     previewPreparing: "Apple Music의 공식 오디오 미리듣기를 준비하고 있습니다...",
     previewReady: "재생 버튼을 누르면 영상 없이 음악만 15초간 재생됩니다.",
@@ -28,8 +28,8 @@ const ui = {
     start: "▶ PLAY 2000s", loadingTitle: "Connecting to the 2000s...", loadingText: "Loading memories from downtown Cheongju.",
     home: "← HOME", capsuleLabel: "TODAY'S TIME CAPSULE", contentTitle: "Today's glimpse of<br>Cheongju in the 2000s",
     musicLabel: "THE SONG BACK THEN", storyLabel: "CHEONGJU BACK THEN", trendLabel: "Y2K THINGS WE LOVED",
-    photoLabel: "OLD SEONGAN-GIL PHOTOS", photoIntro: "These records show Seongan-gil in 1999 and the early 2000s. Tap a photo to open its official archive record.",
-    photoSource: "Chungcheongbuk-do Photo DB: 1999 festival ↗", photoSourceCity: "Cheongju Photo DB: 2001 and 2004 ↗", photoLicense: "License: Korea Open Government License Type 2, attribution and non-commercial use", photoAlt: "Historic Seongan-gil street photo",
+    photoLabel: "OLD SEONGAN-GIL PHOTOS", photoIntro: "These 16 photos document the Seongan-gil cleanup on March 22, 2001. Tap a photo to open the official archive.",
+    photoSource: "Cheongju Photo DB: 16 Seongan-gil cleanup photos from 2001 ↗", photoLicense: "License: Korea Open Government License Type 2, attribution and non-commercial use", photoAlt: "2001 Seongan-gil cleanup photo",
     missionLabel: "TODAY'S 2000s COURSE", missionTitle: "Your 2000s course",
     previewPreparing: "Preparing the official Apple Music audio preview...",
     previewReady: "Press play to hear 15 seconds of music with no video.",
@@ -239,7 +239,6 @@ function applyLanguage(){
   $("photoSectionLabel").textContent = t.photoLabel;
   $("photoIntro").textContent = t.photoIntro;
   $("photoSource").textContent = t.photoSource;
-  $("photoSourceCity").textContent = t.photoSourceCity;
   $("photoLicense").textContent = t.photoLicense;
   document.querySelectorAll(".old-photo").forEach((image, index) => { image.alt = `${t.photoAlt} ${index + 1}`; });
   $("missionLabel").textContent = t.missionLabel;

@@ -12,7 +12,7 @@ NFC를 태그하면 CD 안에 저장된 2000년대 청주 원도심의 음악, �
 - Apple Music 공식 오디오를 이용한 영상 없는 15초 음악 미리듣기와 정지
 - Apple Music 전체 듣기와 공식 YouTube 영상 전체 보기 링크
 - 실제 출처가 연결된 1997~2008년 청주 지역 기록 16개
-- 충청북도·청주시 사진DB의 1999·2001·2004년 성안길 사진 4장 미니 갤러리
+- 청주시 사진DB의 2001년 3월 22일 `성안길 대청소` 사진 16장 미니 갤러리
 - 앱 안에서 열리는 제작자 `두더지상회` 소개 페이지
 - Y2K 유행 12개 중 3개 랜덤
 - 오늘의 2000s 코스 랜덤 추천
@@ -55,12 +55,8 @@ start는 15초 미리듣기를 시작할 초 단위 위치입니다.
 공식 아티스트·기획사·방송사 채널의 영상 사용을 권장합니다.
 
 청주 기록 출처
-- 1999년 10월 15일 청주 성안길 축제: 충청북도 사진DB
-  https://photo.chungbuk.go.kr/photo/selectPhotoInfoWebView.do?key=302&ctgryNo=245&photoInfoNo=7373&pageUnit=12&pageIndex=3
-- 2001년 성안길축제: 청주시 사진DB
-  https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=299&ctgryNo=244&photoInfoNo=57713&pageIndex=1&pageUnit=12&dt=card
-- 2004년 4월 13일 성안길 풍경: 청주시 사진DB
-  https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=187&ctgryNo=31&photoInfoNo=47197
+- 2001년 3월 22일 `성안길 대청소` 사진 16장: 청주시 사진DB
+  https://photo.cheongju.go.kr/photo/selectPhotoInfoWebView.do?key=189&ctgryNo=32&photoInfoNo=17833
   사진 파일을 저장소에 복제하지 않고 공식 사진DB의 미리보기 이미지를 불러옵니다. 사진DB 표기 조건은 공공누리 제2유형(출처표시·비상업적 이용)이며, 초상권에 주의해야 합니다.
 - 1997 청주국제공항 개항: 한국공항공사
   https://www.airport.co.kr/cheongju/cms/frCon/index.do?MENU_ID=330
