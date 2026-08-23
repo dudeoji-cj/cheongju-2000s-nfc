@@ -124,6 +124,9 @@ function selectApplePreview(song, results){
     || candidates.find(item => normalizedTrackName(item.trackName).includes(desired))
     || candidates[0];
 }
+function highResolutionArtwork(value){
+  return value ? value.replace(/\/\d+x\d+bb\.(jpg|png)$/i, "/600x600bb.$1") : "";
+}
 
 const cheongjuStories = [
   {year:"1997", title:{ko:"중부권 하늘길, 청주국제공항 개항",en:"Cheongju International Airport opens"},
@@ -287,6 +290,9 @@ async function prepareAudioPreview(song){
   $("previewStatus").textContent = ui[language].previewPreparing;
   $("audioPreview").removeAttribute("src");
   $("audioPreview").load();
+  $("albumCover").removeAttribute("src");
+  $("albumCover").classList.add("hidden");
+  $("albumFallback").classList.remove("hidden");
   const searchTerm = appleSearchTerm(song);
   $("appleButton").href = `https://music.apple.com/kr/search?term=${encodeURIComponent(searchTerm)}`;
   try {
@@ -299,6 +305,12 @@ async function prepareAudioPreview(song){
     preparedPreview = preview;
     previewPreparing = false;
     $("audioPreview").src = preview.previewUrl;
+    const artwork = highResolutionArtwork(preview.artworkUrl100);
+    if(artwork){
+      $("albumCover").src = artwork;
+      $("albumCover").classList.remove("hidden");
+      $("albumFallback").classList.add("hidden");
+    }
     $("appleButton").href = preview.trackViewUrl || $("appleButton").href;
     $("previewButton").disabled = false;
     $("previewStatus").textContent = ui[language].previewReady;
@@ -342,6 +354,7 @@ function renderCapsule(capsule, resetPreview = true){
   $("songTitle").textContent = song.title;
   $("songArtist").textContent = song.artist;
   $("songCopy").textContent = localized(song.copy);
+  $("albumCover").alt = language === "ko" ? `${song.artist} ${song.title} 앨범 재킷` : `${song.artist} ${song.title} album cover`;
   $("youtubeButton").href = song.youtube;
   const songKey = `${song.artist}|${song.title}`;
   if(preparedSongKey !== songKey) prepareAudioPreview(song);
@@ -420,6 +433,10 @@ $("startButton").addEventListener("click", () => startTimeTravel());
 $("retryButton").addEventListener("click", () => startTimeTravel(650));
 $("previewButton").addEventListener("click", startPreview);
 $("audioPreview").addEventListener("ended", () => { if(previewActive) stopPreview("previewEnded"); });
+$("albumCover").addEventListener("error", () => {
+  $("albumCover").classList.add("hidden");
+  $("albumFallback").classList.remove("hidden");
+});
 $("homeButton").addEventListener("click", () => {
   stopPreview();
   $("contentScreen").classList.add("hidden");
