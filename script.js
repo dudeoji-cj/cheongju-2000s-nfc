@@ -7,6 +7,8 @@ const ui = {
     start: "▶ PLAY 2000s", loadingTitle: "2000년대로 접속 중...", loadingText: "청주 원도심의 기억을 불러오고 있습니다.",
     home: "← 처음으로", capsuleLabel: "TODAY'S TIME CAPSULE", contentTitle: "오늘 열어볼<br>2000년대 청주",
     musicLabel: "그때 그 노래", storyLabel: "그때 청주에서는", trendLabel: "그때 유행했던 것들",
+    photoLabel: "성안길 옛 사진", photoIntro: "작은 사진을 누르면 공식 성안길 갤러리의 원본 기록으로 이동합니다.",
+    photoSource: "사진 출처: 청주성안길 상점가상인회 공식 갤러리 ↗", photoAlt: "성안길 옛 거리 사진",
     missionLabel: "TODAY'S 2000s COURSE", missionTitle: "오늘의 2000s 코스",
     previewReady: "재생 버튼을 누르면 공식 YouTube 영상이 15초간 재생됩니다.",
     previewPlay: "▶ 15초 미리듣기", previewStop: "■ 미리듣기 정지", previewPlaying: "공식 YouTube 영상 미리듣기 재생 중...",
@@ -14,6 +16,9 @@ const ui = {
     previewLocal: "로컬 파일에서는 YouTube 재생이 제한될 수 있습니다. GitHub Pages 주소에서 확인하거나 공식 영상을 열어주세요.",
     youtubeFull: "↗ 공식 영상 전체 보기", source: "기록 출처 보기 ↗", retry: "↻ 다시 시간여행", archive: "▦ 전체 기록 보기",
     archiveTitle: "CHEONGJU MEMORY ARCHIVE", archiveIntro: "2000년대 청주 원도심 기록을 연도별로 살펴보세요.",
+    creatorButton: "☻ 제작자 두더지상회", creatorHome: "제작자 두더지상회", creatorWindowTitle: "CREATOR_DUDEOJI.exe", closeLabel: "닫기",
+    creatorEyebrow: "MADE IN CHEONGJU", creatorTitle: "두더지상회", creatorTagline: "청주의 오래된 기억을 오늘의 물건과 디지털 경험으로 연결합니다.",
+    creatorProjectText: "CD 키링과 NFC 태그를 통해 성안길의 음악, 기록, 유행을 다시 꺼내 보는 로컬 타임캡슐 프로젝트입니다.", creatorCredit: "기획 · 디자인 · 제작",
     copyright: "기억과 기록을 바탕으로 만든 청주 원도심 타임캡슐입니다."
   },
   en: {
@@ -22,6 +27,8 @@ const ui = {
     start: "▶ PLAY 2000s", loadingTitle: "Connecting to the 2000s...", loadingText: "Loading memories from downtown Cheongju.",
     home: "← HOME", capsuleLabel: "TODAY'S TIME CAPSULE", contentTitle: "Today's glimpse of<br>Cheongju in the 2000s",
     musicLabel: "THE SONG BACK THEN", storyLabel: "CHEONGJU BACK THEN", trendLabel: "Y2K THINGS WE LOVED",
+    photoLabel: "OLD SEONGAN-GIL PHOTOS", photoIntro: "Tap a small photo to open the original record in the official Seongan-gil gallery.",
+    photoSource: "Photo source: Cheongju Seongan-gil Merchants Association ↗", photoAlt: "Historic Seongan-gil street photo",
     missionLabel: "TODAY'S 2000s COURSE", missionTitle: "Your 2000s course",
     previewReady: "Press play for a 15-second preview from the official YouTube video.",
     previewPlay: "▶ PLAY 15 SEC", previewStop: "■ STOP PREVIEW", previewPlaying: "Playing the official YouTube preview...",
@@ -29,6 +36,9 @@ const ui = {
     previewLocal: "YouTube playback can be restricted from local files. Test on GitHub Pages or open the official video.",
     youtubeFull: "↗ WATCH FULL OFFICIAL VIDEO", source: "View source ↗", retry: "↻ TIME TRAVEL AGAIN", archive: "▦ VIEW ALL RECORDS",
     archiveTitle: "CHEONGJU MEMORY ARCHIVE", archiveIntro: "Browse downtown Cheongju memories from the 2000s by year.",
+    creatorButton: "☻ CREATOR: DUDEOJI SHOP", creatorHome: "CREATOR: DUDEOJI SHOP", creatorWindowTitle: "CREATOR_DUDEOJI.exe", closeLabel: "Close",
+    creatorEyebrow: "MADE IN CHEONGJU", creatorTitle: "Dudeoji Shop", creatorTagline: "Connecting Cheongju's old memories with objects and digital experiences for today.",
+    creatorProjectText: "A local time-capsule project that reopens Seongan-gil's music, records and trends through a CD keyring and NFC tag.", creatorCredit: "PLANNING · DESIGN · PRODUCTION",
     copyright: "A downtown Cheongju time capsule built from memories and documented records."
   }
 };
@@ -164,6 +174,10 @@ function applyLanguage(){
   $("musicSectionLabel").textContent = t.musicLabel;
   $("storySectionLabel").textContent = t.storyLabel;
   $("trendSectionLabel").textContent = t.trendLabel;
+  $("photoSectionLabel").textContent = t.photoLabel;
+  $("photoIntro").textContent = t.photoIntro;
+  $("photoSource").textContent = t.photoSource;
+  document.querySelectorAll(".old-photo").forEach((image, index) => { image.alt = `${t.photoAlt} ${index + 1}`; });
   $("missionLabel").textContent = t.missionLabel;
   $("missionHeading").textContent = t.missionTitle;
   $("previewButton").textContent = previewActive ? t.previewStop : t.previewPlay;
@@ -174,6 +188,15 @@ function applyLanguage(){
   $("archiveButton").textContent = t.archive;
   $("archiveTitle").textContent = t.archiveTitle;
   $("archiveIntro").textContent = t.archiveIntro;
+  $("homeCreatorButton").textContent = t.creatorHome;
+  $("creatorButton").textContent = t.creatorButton;
+  $("creatorWindowTitle").textContent = t.creatorWindowTitle;
+  $("creatorCloseButton").setAttribute("aria-label", t.closeLabel);
+  $("creatorEyebrow").textContent = t.creatorEyebrow;
+  $("creatorTitle").textContent = t.creatorTitle;
+  $("creatorTagline").textContent = t.creatorTagline;
+  $("creatorProjectText").textContent = t.creatorProjectText;
+  $("creatorCredit").textContent = t.creatorCredit;
   $("copyrightText").textContent = t.copyright;
   if(currentCapsule) renderCapsule(currentCapsule, false);
   renderArchive();
@@ -313,6 +336,16 @@ $("archiveButton").addEventListener("click", () => {
 $("archiveCloseButton").addEventListener("click", () => $("archiveDialog").close());
 $("archiveDialog").addEventListener("click", (event) => {
   if(event.target === $("archiveDialog")) $("archiveDialog").close();
+});
+function openCreator(){
+  const dialog = $("creatorDialog");
+  if(typeof dialog.showModal === "function") dialog.showModal(); else dialog.setAttribute("open", "");
+}
+$("homeCreatorButton").addEventListener("click", openCreator);
+$("creatorButton").addEventListener("click", openCreator);
+$("creatorCloseButton").addEventListener("click", () => $("creatorDialog").close());
+$("creatorDialog").addEventListener("click", (event) => {
+  if(event.target === $("creatorDialog")) $("creatorDialog").close();
 });
 window.addEventListener("pagehide", () => stopPreview());
 

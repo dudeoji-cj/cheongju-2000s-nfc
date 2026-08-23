@@ -40,6 +40,7 @@
 
       <button id="startButton" class="main-button" type="button">▶ PLAY 2000s</button>
       <p id="homeHint" class="hint">CD 안에 저장된 2000년대 청주를 열어보세요.</p>
+      <button id="homeCreatorButton" class="creator-home-link" type="button">제작자 두더지상회</button>
     </section>
   </main>
 
@@ -92,6 +93,30 @@
       <a id="storySource" class="source-link" href="#" target="_blank" rel="noopener noreferrer">기록 출처 보기 ↗</a>
     </section>
 
+    <section class="card photo-card" aria-labelledby="photoSectionLabel">
+      <div class="card-label"><span class="badge mint">PIC</span><span id="photoSectionLabel">성안길 옛 사진</span></div>
+      <p id="photoIntro" class="photo-intro">작은 사진을 누르면 공식 성안길 갤러리의 원본 기록으로 이동합니다.</p>
+      <div class="old-photo-strip">
+        <a class="old-photo-link" href="https://www.seongangil.co.kr/30/?bmode=view&idx=10257978" target="_blank" rel="noopener noreferrer">
+          <img class="old-photo" src="https://cdn.imweb.me/upload/S201805215b0247cb93a08/1da5d6ffe7de4.png" alt="성안길 옛 거리 사진 1" loading="lazy" referrerpolicy="no-referrer">
+          <span>01</span>
+        </a>
+        <a class="old-photo-link" href="https://www.seongangil.co.kr/30/?bmode=view&idx=10257978" target="_blank" rel="noopener noreferrer">
+          <img class="old-photo" src="https://cdn.imweb.me/upload/S201805215b0247cb93a08/24ad032f420ad.png" alt="성안길 옛 거리 사진 2" loading="lazy" referrerpolicy="no-referrer">
+          <span>02</span>
+        </a>
+        <a class="old-photo-link" href="https://www.seongangil.co.kr/30/?bmode=view&idx=10257978" target="_blank" rel="noopener noreferrer">
+          <img class="old-photo" src="https://cdn.imweb.me/upload/S201805215b0247cb93a08/4b416c1ce938c.png" alt="성안길 옛 거리 사진 3" loading="lazy" referrerpolicy="no-referrer">
+          <span>03</span>
+        </a>
+        <a class="old-photo-link" href="https://www.seongangil.co.kr/30/?bmode=view&idx=10257978" target="_blank" rel="noopener noreferrer">
+          <img class="old-photo" src="https://cdn.imweb.me/upload/S201805215b0247cb93a08/5949fba8de2d2.png" alt="성안길 옛 거리 사진 4" loading="lazy" referrerpolicy="no-referrer">
+          <span>04</span>
+        </a>
+      </div>
+      <a id="photoSource" class="photo-source" href="https://www.seongangil.co.kr/30/?bmode=view&idx=10257978" target="_blank" rel="noopener noreferrer">사진 출처: 청주성안길 상점가상인회 공식 갤러리 ↗</a>
+    </section>
+
     <section class="card trend-card" aria-labelledby="trendSectionLabel">
       <div class="card-label"><span class="badge yellow">★</span><span id="trendSectionLabel">그때 유행했던 것들</span></div>
       <div id="trendList" class="trend-list"></div>
@@ -106,6 +131,7 @@
     <div class="bottom-actions">
       <button id="retryButton" class="main-button" type="button">↻ 다시 시간여행</button>
       <button id="archiveButton" class="secondary-button" type="button">▦ 전체 기록 보기</button>
+      <button id="creatorButton" class="secondary-button creator-button" type="button">☻ 제작자 두더지상회</button>
     </div>
     <p id="copyrightText" class="copyright">기억과 기록을 바탕으로 만든 청주 원도심 타임캡슐입니다.</p>
   </main>
@@ -120,6 +146,24 @@
     </div>
   </dialog>
 
-  <script src="script.js?v=30"></script>
+  <dialog id="creatorDialog" class="archive-dialog creator-dialog">
+    <div class="dialog-window">
+      <div class="window-bar"><span id="creatorWindowTitle">CREATOR_DUDEOJI.exe</span><button id="creatorCloseButton" type="button" aria-label="닫기">×</button></div>
+      <div class="dialog-body creator-body">
+        <p id="creatorEyebrow" class="creator-eyebrow">MADE IN CHEONGJU</p>
+        <div class="creator-logo" aria-hidden="true"><span>두</span><span>더</span><span>지</span></div>
+        <h2 id="creatorTitle">두더지상회</h2>
+        <p id="creatorTagline" class="creator-tagline">청주의 오래된 기억을 오늘의 물건과 디지털 경험으로 연결합니다.</p>
+        <div class="creator-project">
+          <strong>CHEONGJU 2000s</strong>
+          <p id="creatorProjectText">CD 키링과 NFC 태그를 통해 성안길의 음악, 기록, 유행을 다시 꺼내 보는 로컬 타임캡슐 프로젝트입니다.</p>
+        </div>
+        <p id="creatorCredit" class="creator-credit">기획 · 디자인 · 제작</p>
+        <p class="creator-name">두더지상회</p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js?v=31"></script>
 </body>
 </html>
